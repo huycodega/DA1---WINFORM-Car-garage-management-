@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="oto_testModelStoreContainer" CdmEntityContainer="oto_testEntities">
+    <EntitySetMapping Name="dichvus">
+      <EntityTypeMapping TypeName="oto_testModel.dichvu">
+        <MappingFragment StoreEntitySet="dichvu">
+          <ScalarProperty Name="id_dv" ColumnName="id_dv" />
+          <ScalarProperty Name="ten_dv" ColumnName="ten_dv" />
+          <ScalarProperty Name="gia_dv" ColumnName="gia_dv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lap_lich">
+      <EntityTypeMapping TypeName="oto_testModel.lap_lich">
+        <MappingFragment StoreEntitySet="lap_lich">
+          <ScalarProperty Name="id_phieu" ColumnName="id_phieu" />
+          <ScalarProperty Name="ten_phieu" ColumnName="ten_phieu" />
+          <ScalarProperty Name="ngay_hen" ColumnName="ngay_hen" />
+          <ScalarProperty Name="id_kh" ColumnName="id_kh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loai_cong">
+      <EntityTypeMapping TypeName="oto_testModel.loai_cong">
+        <MappingFragment StoreEntitySet="loai_cong">
+          <ScalarProperty Name="id_cong" ColumnName="id_cong" />
+          <ScalarProperty Name="ten_cong" ColumnName="ten_cong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhansus">
+      <EntityTypeMapping TypeName="oto_testModel.nhansu">
+        <MappingFragment StoreEntitySet="nhansu">
+          <ScalarProperty Name="id_ns" ColumnName="id_ns" />
+          <ScalarProperty Name="ten_ns" ColumnName="ten_ns" />
+          <ScalarProperty Name="dc_ns" ColumnName="dc_ns" />
+          <ScalarProperty Name="chuc_vu" ColumnName="chuc_vu" />
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="id_kh" ColumnName="id_kh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhom_vl">
+      <EntityTypeMapping TypeName="oto_testModel.nhom_vl">
+        <MappingFragment StoreEntitySet="nhom_vl">
+          <ScalarProperty Name="id_nhom" ColumnName="id_nhom" />
+          <ScalarProperty Name="ten_nhom" ColumnName="ten_nhom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phu_tung">
+      <EntityTypeMapping TypeName="oto_testModel.phu_tung">
+        <MappingFragment StoreEntitySet="phu_tung">
+          <ScalarProperty Name="id_phutung" ColumnName="id_phutung" />
+          <ScalarProperty Name="ten_phu_tung" ColumnName="ten_phu_tung" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="ngaynhap" ColumnName="ngaynhap" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="id_nhom" ColumnName="id_nhom" />
+          <ScalarProperty Name="noi_cung_cap" ColumnName="noi_cung_cap" />
+          <ScalarProperty Name="tinh_trang" ColumnName="tinh_trang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tt_khachhang">
+      <EntityTypeMapping TypeName="oto_testModel.tt_khachhang">
+        <MappingFragment StoreEntitySet="tt_khachhang">
+          <ScalarProperty Name="id_kh" ColumnName="id_kh" />
+          <ScalarProperty Name="ten_kh" ColumnName="ten_kh" />
+          <ScalarProperty Name="dc_kh" ColumnName="dc_kh" />
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="id_xe" ColumnName="id_xe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tt_oto">
+      <EntityTypeMapping TypeName="oto_testModel.tt_oto">
+        <MappingFragment StoreEntitySet="tt_oto">
+          <ScalarProperty Name="id_xe" ColumnName="id_xe" />
+          <ScalarProperty Name="ten_oto" ColumnName="ten_oto" />
+          <ScalarProperty Name="bien_so" ColumnName="bien_so" />
+          <ScalarProperty Name="tinh_trang" ColumnName="tinh_trang" />
+          <ScalarProperty Name="tt_bhx" ColumnName="tt_bhx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="oto_testModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id_users" ColumnName="id_users" />
+          <ScalarProperty Name="taikhoan" ColumnName="taikhoan" />
+          <ScalarProperty Name="mk" ColumnName="mk" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="quyen" ColumnName="quyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

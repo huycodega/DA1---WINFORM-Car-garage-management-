@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA14F701-AA02-4945-B97C-2566F68ACA71}|DAL\\DAL.csproj|c:\\users\\fptshop\\desktop\\da1\\da1_test\\dal\\dal_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA14F701-AA02-4945-B97C-2566F68ACA71}|DAL\\DAL.csproj|solutionrelative:dal\\dal_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA14F701-AA02-4945-B97C-2566F68ACA71}|DAL\\DAL.csproj|c:\\users\\fptshop\\desktop\\da1\\da1_test\\dal\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA14F701-AA02-4945-B97C-2566F68ACA71}|DAL\\DAL.csproj|solutionrelative:dal\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|c:\\users\\fptshop\\desktop\\da1\\da1_test\\gui\\frm_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|c:\\users\\fptshop\\desktop\\da1\\da1_test\\gui\\frm_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|c:\\users\\fptshop\\desktop\\da1\\da1_test\\gui\\frm_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\gui\\frm_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\gui\\frm_ln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_ln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\gui\\frm_npt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DC9D9CF-B35D-40A2-8BEC-43F0390305C5}|GUI\\GUI.csproj|solutionrelative:gui\\frm_npt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\DAL\\Connection.cs",
+              "RelativeDocumentMoniker": "DAL\\Connection.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\DAL\\Connection.cs",
+              "RelativeToolTip": "DAL\\Connection.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:38:58.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAL_DV.cs",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\DAL\\DAL_DV.cs",
+              "RelativeDocumentMoniker": "DAL\\DAL_DV.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\DAL\\DAL_DV.cs",
+              "RelativeToolTip": "DAL\\DAL_DV.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:38:01.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_DV.cs",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_DV.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_DV.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_DV.cs",
+              "RelativeToolTip": "GUI\\frm_DV.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAwG8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:37:47.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_DV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_DV.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_DV.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_DV.cs [Design]",
+              "RelativeToolTip": "GUI\\frm_DV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:37:45.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_HoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_HoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_HoaDon.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_HoaDon.cs",
+              "RelativeToolTip": "GUI\\frm_HoaDon.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAwwAQBAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:53:51.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_HoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_HoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_HoaDon.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_HoaDon.cs [Design]",
+              "RelativeToolTip": "GUI\\frm_HoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:49:18.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_LN.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_LN.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_LN.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_LN.cs [Design]",
+              "RelativeToolTip": "GUI\\frm_LN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:53:46.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frm_NPT.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_NPT.cs",
+              "RelativeDocumentMoniker": "GUI\\frm_NPT.cs",
+              "ToolTip": "C:\\Users\\FPTSHOP\\Desktop\\DA1\\DA1_test\\GUI\\frm_NPT.cs [Design]",
+              "RelativeToolTip": "GUI\\frm_NPT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:48:06.639Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="oto_testModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="dichvu">
+    <Key>
+      <PropertyRef Name="id_dv" />
+    </Key>
+    <Property Name="id_dv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_dv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gia_dv" Type="Int32" />
+  </EntityType>
+  <EntityType Name="lap_lich">
+    <Key>
+      <PropertyRef Name="id_phieu" />
+    </Key>
+    <Property Name="id_phieu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_phieu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngay_hen" Type="DateTime" Precision="3" />
+    <Property Name="id_kh" Type="Int32" />
+    <NavigationProperty Name="tt_khachhang" Relationship="Self.FK__lap_lich__id_kh__45F365D3" FromRole="lap_lich" ToRole="tt_khachhang" />
+  </EntityType>
+  <EntityType Name="loai_cong">
+    <Key>
+      <PropertyRef Name="id_cong" />
+    </Key>
+    <Property Name="id_cong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_cong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="nhansu">
+    <Key>
+      <PropertyRef Name="id_ns" />
+    </Key>
+    <Property Name="id_ns" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_ns" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dc_ns" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chuc_vu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gioi_tinh" Type="Boolean" />
+    <Property Name="hinhanh" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="sdt" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="id_kh" Type="Int32" />
+    <NavigationProperty Name="tt_khachhang" Relationship="Self.FK__nhansu__id_kh__3C69FB99" FromRole="nhansu" ToRole="tt_khachhang" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__id_nhanvi__534D60F1" FromRole="nhansu" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="nhom_vl">
+    <Key>
+      <PropertyRef Name="id_nhom" />
+    </Key>
+    <Property Name="id_nhom" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_nhom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="phu_tung" Relationship="Self.FK__phu_tung__id_nho__412EB0B6" FromRole="nhom_vl" ToRole="phu_tung" />
+  </EntityType>
+  <EntityType Name="phu_tung">
+    <Key>
+      <PropertyRef Name="id_phutung" />
+    </Key>
+    <Property Name="id_phutung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_phu_tung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soluong" Type="Int32" />
+    <Property Name="gia" Type="Int32" />
+    <Property Name="ngaynhap" Type="DateTime" Precision="3" />
+    <Property Name="hinhanh" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="id_nhom" Type="Int32" />
+    <Property Name="noi_cung_cap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tinh_trang" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="nhom_vl" Relationship="Self.FK__phu_tung__id_nho__412EB0B6" FromRole="phu_tung" ToRole="nhom_vl" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tt_khachhang">
+    <Key>
+      <PropertyRef Name="id_kh" />
+    </Key>
+    <Property Name="id_kh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_kh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dc_kh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gioi_tinh" Type="Boolean" />
+    <Property Name="hinhanh" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="sdt" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="id_xe" Type="Int32" />
+    <NavigationProperty Name="lap_lich" Relationship="Self.FK__lap_lich__id_kh__45F365D3" FromRole="tt_khachhang" ToRole="lap_lich" />
+    <NavigationProperty Name="nhansus" Relationship="Self.FK__nhansu__id_kh__3C69FB99" FromRole="tt_khachhang" ToRole="nhansu" />
+    <NavigationProperty Name="tt_oto" Relationship="Self.FK__tt_khachh__id_xe__398D8EEE" FromRole="tt_khachhang" ToRole="tt_oto" />
+  </EntityType>
+  <EntityType Name="tt_oto">
+    <Key>
+      <PropertyRef Name="id_xe" />
+    </Key>
+    <Property Name="id_xe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_oto" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="bien_so" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="tinh_trang" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tt_bhx" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tt_khachhang" Relationship="Self.FK__tt_khachh__id_xe__398D8EEE" FromRole="tt_oto" ToRole="tt_khachhang" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id_users" />
+    </Key>
+    <Property Name="id_users" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="taikhoan" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="mk" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="id_nhanvien" Type="Int32" />
+    <Property Name="quyen" Type="Int32" />
+    <NavigationProperty Name="nhansu" Relationship="Self.FK__Users__id_nhanvi__534D60F1" FromRole="Users" ToRole="nhansu" />
+  </EntityType>
+  <Association Name="FK__lap_lich__id_kh__45F365D3">
+    <End Role="tt_khachhang" Type="Self.tt_khachhang" Multiplicity="0..1" />
+    <End Role="lap_lich" Type="Self.lap_lich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tt_khachhang">
+        <PropertyRef Name="id_kh" />
+      </Principal>
+      <Dependent Role="lap_lich">
+        <PropertyRef Name="id_kh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__nhansu__id_kh__3C69FB99">
+    <End Role="tt_khachhang" Type="Self.tt_khachhang" Multiplicity="0..1" />
+    <End Role="nhansu" Type="Self.nhansu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tt_khachhang">
+        <PropertyRef Name="id_kh" />
+      </Principal>
+      <Dependent Role="nhansu">
+        <PropertyRef Name="id_kh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__id_nhanvi__534D60F1">
+    <End Role="nhansu" Type="Self.nhansu" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhansu">
+        <PropertyRef Name="id_ns" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="id_nhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__phu_tung__id_nho__412EB0B6">
+    <End Role="nhom_vl" Type="Self.nhom_vl" Multiplicity="0..1" />
+    <End Role="phu_tung" Type="Self.phu_tung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhom_vl">
+        <PropertyRef Name="id_nhom" />
+      </Principal>
+      <Dependent Role="phu_tung">
+        <PropertyRef Name="id_nhom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tt_khachh__id_xe__398D8EEE">
+    <End Role="tt_oto" Type="Self.tt_oto" Multiplicity="0..1" />
+    <End Role="tt_khachhang" Type="Self.tt_khachhang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tt_oto">
+        <PropertyRef Name="id_xe" />
+      </Principal>
+      <Dependent Role="tt_khachhang">
+        <PropertyRef Name="id_xe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="oto_testEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dichvus" EntityType="Self.dichvu" />
+    <EntitySet Name="lap_lich" EntityType="Self.lap_lich" />
+    <EntitySet Name="loai_cong" EntityType="Self.loai_cong" />
+    <EntitySet Name="nhansus" EntityType="Self.nhansu" />
+    <EntitySet Name="nhom_vl" EntityType="Self.nhom_vl" />
+    <EntitySet Name="phu_tung" EntityType="Self.phu_tung" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tt_khachhang" EntityType="Self.tt_khachhang" />
+    <EntitySet Name="tt_oto" EntityType="Self.tt_oto" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__lap_lich__id_kh__45F365D3" Association="Self.FK__lap_lich__id_kh__45F365D3">
+      <End Role="tt_khachhang" EntitySet="tt_khachhang" />
+      <End Role="lap_lich" EntitySet="lap_lich" />
+    </AssociationSet>
+    <AssociationSet Name="FK__nhansu__id_kh__3C69FB99" Association="Self.FK__nhansu__id_kh__3C69FB99">
+      <End Role="tt_khachhang" EntitySet="tt_khachhang" />
+      <End Role="nhansu" EntitySet="nhansus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__id_nhanvi__534D60F1" Association="Self.FK__Users__id_nhanvi__534D60F1">
+      <End Role="nhansu" EntitySet="nhansus" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__phu_tung__id_nho__412EB0B6" Association="Self.FK__phu_tung__id_nho__412EB0B6">
+      <End Role="nhom_vl" EntitySet="nhom_vl" />
+      <End Role="phu_tung" EntitySet="phu_tung" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tt_khachh__id_xe__398D8EEE" Association="Self.FK__tt_khachh__id_xe__398D8EEE">
+      <End Role="tt_oto" EntitySet="tt_oto" />
+      <End Role="tt_khachhang" EntitySet="tt_khachhang" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
